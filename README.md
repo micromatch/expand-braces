@@ -1,12 +1,18 @@
 # expand-braces [![NPM version](https://badge.fury.io/js/expand-braces.svg)](http://badge.fury.io/js/expand-braces)
 
-> Braces expansion for arrays of patterns.
+> Wrapper for [braces] to enable brace expansion for arrays of patterns.
 
 ## Install
 #### Install with [npm](npmjs.org):
 
 ```bash
 npm i expand-braces --save-dev
+```
+
+## Run benchmarks
+
+```bash
+node benchmark
 ```
 
 ## Run tests
