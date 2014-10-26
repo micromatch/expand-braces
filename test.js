@@ -12,6 +12,14 @@ var expand = require('./');
 
 describe('given an array of patterns with braces', function () {
   describe('braces', function () {
+    it('should work with a list of strings', function () {
+      expand('x{a,b,c}z', 'x{a,b,c}z').should.eql(['xaz', 'xbz', 'xcz']);
+    });
+
+    it('should work with arrays of strings', function () {
+      expand(['x{a,b,c}z', 'x{a,b,c}z']).should.eql(['xaz', 'xbz', 'xcz']);
+    });
+
     it('should work with no braces', function () {
       expand(['abc', 'xyz']).should.eql(['abc', 'xyz']);
     });
@@ -62,6 +70,13 @@ describe('given an array of patterns with braces', function () {
         return str + i++;
       });
       range.should.eql(['a0', 'b1', 'c2', 'd3', 'e4', 'f5', 'g6', 'h7']);
+    });
+
+    it('should use a custom function for expansions.', function () {
+      var range = expand(['{a..e}', '{f..h}'], function (str) {
+        return '_' + str;
+      });
+      range.should.eql(['_a', '_b', '_c', '_d', '_e', '_f', '_g', '_h']);
     });
   });
 
