@@ -1,6 +1,6 @@
 {
   "name": "expand-braces",
-  "description": "Braces expansion for arrays of patterns.",
+  "description": "Wrapper for [braces] to enable brace expansion for arrays of patterns.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/expand-braces",
   "author": {
