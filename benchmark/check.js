@@ -2,7 +2,7 @@
 
 var chalk = require('chalk');
 var path = require('path');
-var glob = require('glob');
+var glob = require('matched');
 
 /**
  * Sanity check

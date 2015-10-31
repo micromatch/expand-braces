@@ -1,7 +1,7 @@
 'use strict';
 
 var braces = require('braces');
-var uniq = require('array-uniq');
+var uniq = require('array-unique');
 var slice = require('array-slice');
 
 module.exports = function expand() {

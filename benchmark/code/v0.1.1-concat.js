@@ -1,7 +1,7 @@
 'use strict';
 
 var braces = require('braces');
-var uniq = require('array-uniq');
+var uniq = require('array-unique');
 
 module.exports = function expand(val, fn) {
   val = Array.isArray(val) ? val : [val];

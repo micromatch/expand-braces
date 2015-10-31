@@ -2,7 +2,7 @@
 
 var braces = require('braces');
 var slice = require('array-slice');
-var uniq = require('array-uniq');
+var uniq = require('array-unique');
 
 module.exports = function expand(val, fn) {
   var args = slice(arguments);

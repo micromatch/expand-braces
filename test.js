@@ -47,7 +47,7 @@ describe('given an array of patterns with braces', function () {
     it('should throw an error when imbalanced braces are found.', function () {
       (function () {
         expand(['a/{b,c}{d{e,f}g']);
-      }).should.throw('imbalanced brace in: a/{b,c}{deg');
+      }).should.throw('[brace expansion] imbalanced brace in: a/{b,c}{deg');
     });
   });
 
