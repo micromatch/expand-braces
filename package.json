@@ -22,14 +22,15 @@
   "dependencies": {
     "array-slice": "^0.2.3",
     "array-unique": "^0.2.1",
-    "braces": "^0.1.2"
+    "braces": "^2.3.1"
   },
   "devDependencies": {
+    "arr-flatten": "^0.1.0",
     "benchmarked": "^0.1.3",
     "chalk": "^0.5.1",
     "matched": "^0.3.2",
-    "should": "^4.1.0",
-    "arr-flatten": "^0.1.0"
+    "mocha": "^5.2.0",
+    "should": "^4.1.0"
   },
   "keywords": [
     "alpha",
