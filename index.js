@@ -29,10 +29,10 @@ module.exports = function expand(array) {
       var clen = current.length;
       var j = 0;
       while (j < clen) {
-        arr.push.apply(arr, braces(current[j++], fn));
+        arr.push.apply(arr, braces(current[j++], { transform: fn, expand: true }));
       }
     } else {
-      arr.push.apply(arr, braces(current, fn));
+      arr.push.apply(arr, braces(current, { transform: fn, expand: true }));
     }
   }
 
